@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Пример с элементом header и стилизацией</title>
+    <style>
+        body, header {
+            margin: 0; /* Убираем внешние отступы у body и заголовка */
+        }
+
+        body {
+            height: 100vh; /* Устанавливаем высоту body как 100% высоты окна просмотра (viewport height) */
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/2/21/Hundtandsrutor.png');
+            background-size: cover; /* Задаем фоновое изображение, чтобы оно покрывало всю видимую область */
+        }
+
+        header {
+            width: 100%; /* Устанавливаем ширину header в 100% ширины родительского контейнера (body) */
+            height: 280px;
+            background-color: rgba(232, 200, 215, 0.7); /* Полупрозрачный фон заголовка */
+            text-align: center; /* Выравниваем текст по центру */
+            padding: 10px 15px; /* Внутренние отступы сверху и по бокам */
+        }
+
+        #wrapper {
+            width: 100%; /* Устанавливаем ширину wrapper в 100% ширины родительского контейнера (header) */
+            height: 100%; /* Устанавливаем высоту wrapper в 100% высоты родительского контейнера (header) */
+            background-color: rgba(255, 255, 255, 0.2); /* Прозрачный белый фон wrapper */
+            display: flex; /* Делаем wrapper контейнером с флекс-раскладкой */
+            align-items: center; /* Выравниваем содержимое по центру вертикально */
+            justify-content: center; /* Выравниваем содержимое по центру горизонтально */
+        }
+
+        .title {
+            font-size: 100px;
+            color: white; /* Устанавливаем белый цвет текста заголовка */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="wrapper">
+            <h1 class="title">Неделя 4. Стилизация и CSS</h1>
+        </div>
+    </header>
+</body>
+</html>
